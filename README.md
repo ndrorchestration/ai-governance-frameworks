@@ -2,8 +2,25 @@
 ![Gold Star Certified](https://img.shields.io/badge/Status-Gold%20Star%20Certified-gold)
 ![NIST AI RMF](https://img.shields.io/badge/Framework-NIST%20AI%20RMF-blue)
 ![ISO 42001](https://img.shields.io/badge/Standard-ISO%2042001-green)
+![License](https://img.shields.io/badge/License-Apache%202.0-blue)
 
 Validated frameworks for AI governance: Paul-Elder Critical Thinking, NIST AI RMF, ISO 42001, IIA AI Auditing - with implementation roadmap and success metrics.
+
+## License
+
+**As of January 2026, this project is licensed under [Apache License 2.0](LICENSE).**
+
+Previous versions (prior to v1.0.0 / January 2026) were released under MIT License and remain available under those terms.
+
+### Why Apache 2.0?
+
+This project is designed for institutional and enterprise deployment. Apache 2.0 provides:
+
+- **Explicit patent protection** for downstream users and contributors
+- **Clear modification requirements** supporting governance and attribution
+- **Enterprise-ready compliance** aligned with formal procurement standards
+
+This license change supports the project's core mission: providing institutional-grade AI frameworks with professional legal clarity for academic research, enterprise adoption, and regulatory compliance scenarios.
 
 ## Framework Comparison: NIST AI RMF vs ISO 42001
 
