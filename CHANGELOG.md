@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.0] - 2026-04-19
+
+### Changed
+- Updated repository visibility from private to public to support portfolio, research, and standards-alignment use cases.
+- Confirmed Apache 2.0 as the active license for all v1.x releases; MIT remains applicable only to pre-v1.0.0 history.
+
+### Governance
+- Verified no internal or proprietary implementation details are present in this repository (documentation, frameworks, and reference standards only).
+- Validated badge set: Gold Star Certified, NIST AI RMF, ISO 42001, Apache 2.0.
+- Part of Phi-Harmonic Pentagon ecosystem — Lavender → Amethyst drift normalization sweep completed 2026-04-19.
+
 ## [1.0.0] - 2026-01-04
 
 ### License Change
