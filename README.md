@@ -4,7 +4,9 @@
 ![ISO 42001](https://img.shields.io/badge/Standard-ISO%2042001-green)
 ![License](https://img.shields.io/badge/License-Apache%202.0-blue)
 
-Validated frameworks for AI governance: Paul-Elder Critical Thinking, NIST AI RMF, ISO 42001, IIA AI Auditing - with implementation roadmap and success metrics.
+> **Governance:** DGAF / Agent Amethyst — Yes. This repository is the NIST/ISO/IIA implementation bridge within the DGAF stack. See [DGAF-Framework](https://github.com/Flickerflash/DGAF-Framework) for spine documentation.
+
+Validated frameworks for AI governance: Paul-Elder Critical Thinking, NIST AI RMF, ISO 42001, IIA AI Auditing — with implementation roadmap and success metrics.
 
 ## License
 
@@ -45,5 +47,14 @@ This license change supports the project's core mission: providing institutional
 - **Audit Compliance**: Pass rate for internal/external audits
 - **Ethical Alignment**: Zero critical ethical violations across AI lifecycle
 
+## Related Ecosystem
+
+- [DGAF-Framework](https://github.com/Flickerflash/DGAF-Framework) — governance spine
+- [Amethyst-Governance-Eval-Stack](https://github.com/Flickerflash/Amethyst-Governance-Eval-Stack) — multi-agent eval framework
+- [Gold-star-standards](https://github.com/Flickerflash/Gold-star-standards) — certification rubrics
+- [junior-apogee-app](https://github.com/Flickerflash/junior-apogee-app) — production QA platform
+
 ## Provenance
-[web:22][web:25][web:31][conversation_history:11]
+
+Developed by [Ndr "Ender" Hensel](https://github.com/Flickerflash) — AI Orchestration Engineer & Systems Architect, Columbus OH.  
+[Portfolio](https://flickerflash.vercel.app/) · [LinkedIn](https://www.linkedin.com/in/andrewhensel) · [GitHub](https://github.com/Flickerflash)
