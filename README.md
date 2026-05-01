@@ -4,7 +4,7 @@
 ![ISO 42001](https://img.shields.io/badge/Standard-ISO%2042001-green)
 ![License](https://img.shields.io/badge/License-Apache%202.0-blue)
 
-> **Governance:** DGAF / Agent Amethyst — Yes. This repository is the NIST/ISO/IIA implementation bridge within the DGAF stack. See [DGAF-Framework](https://github.com/Flickerflash/DGAF-Framework) for spine documentation.
+> **Governance:** DGAF / Agent Amethyst — This repository is the NIST/ISO/IIA implementation bridge within the DGAF stack. See [DGAF-Framework](https://github.com/ndrorchestration/DGAF-Framework) for spine documentation.
 
 Validated frameworks for AI governance: Paul-Elder Critical Thinking, NIST AI RMF, ISO 42001, IIA AI Auditing — with implementation roadmap and success metrics.
 
@@ -49,12 +49,12 @@ This license change supports the project's core mission: providing institutional
 
 ## Related Ecosystem
 
-- [DGAF-Framework](https://github.com/Flickerflash/DGAF-Framework) — governance spine
-- [Amethyst-Governance-Eval-Stack](https://github.com/Flickerflash/Amethyst-Governance-Eval-Stack) — multi-agent eval framework
-- [Gold-star-standards](https://github.com/Flickerflash/Gold-star-standards) — certification rubrics
-- [junior-apogee-app](https://github.com/Flickerflash/junior-apogee-app) — production QA platform
+- [DGAF-Framework](https://github.com/ndrorchestration/DGAF-Framework) — governance spine
+- [Amethyst-Governance-Eval-Stack](https://github.com/ndrorchestration/Amethyst-Governance-Eval-Stack) — multi-agent eval framework
+- [Gold-star-standards](https://github.com/ndrorchestration/Gold-star-standards) — certification rubrics
+- [junior-apogee-app](https://github.com/ndrorchestration/junior-apogee-app) — production QA platform
 
 ## Provenance
 
-Developed by [Ndr "Ender" Hensel](https://github.com/Flickerflash) — AI Orchestration Engineer & Systems Architect, Columbus OH.  
-[Portfolio](https://flickerflash.vercel.app/) · [LinkedIn](https://www.linkedin.com/in/andrewhensel) · [GitHub](https://github.com/Flickerflash)
+Developed by [Ndr "Ender" Hensel](https://github.com/ndrorchestration) — AI Orchestration Engineer & Systems Architect, Columbus OH.  
+[LinkedIn](https://www.linkedin.com/in/andrewhensel) · [GitHub](https://github.com/ndrorchestration)
