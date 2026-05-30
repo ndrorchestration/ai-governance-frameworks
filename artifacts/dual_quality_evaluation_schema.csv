@@ -12,6 +12,10 @@ escalation_correctness,float,Score from scoring_rubric_v1.json for escalation_co
 process_score,float,Aggregate process quality score: mean(authority_compliance; veto_integrity; logging_completeness; escalation_correctness),process_quality,true,0.92,Range [0.0; 1.0]; computed field
 risk_class,string,Risk classification of the scenario (e.g.; low; medium; high; critical),evaluation_context,true,high,Must be from [low; medium; high; critical]
 decision_path,string,Textual reconstruction of the complete decision chain: authorities involved; gates crossed; vetos applied; escalations triggered,decision_reconstruction,true,"Authority checked (User:read-only); Denied; Log entry created",Free-form text; must be reconstructible from logs
+row_id,string,Unique row identifier (UUID v4),metadata,false,3fa85f64-5717-4562-b3fc-2c963f66afa6,Optional; recommended for provenance
+data_source,string,Provenance of the row: synthetic | real_run | benchmark,metadata,true,synthetic,Must be from [synthetic; real_run; benchmark]
+evaluator_id,string,Identifier for the evaluator (human or automated) that scored this row,metadata,true,automated-eval-01,Free-form string; include team and tool
+created_timestamp,string,Row creation timestamp (ISO 8601),metadata,true,2026-05-30T10:00:00Z,ISO 8601 timestamp
 tokens,integer,Number of tokens consumed in generating or evaluating the response,performance,false,1245,Non-negative integer
 latency_ms,integer,Response latency in milliseconds,performance,false,342,Non-negative integer
 final_status,string,Outcome of the decision (e.g.; executed; blocked; escalated; waiting),evaluation_outcome,true,blocked,Must be from [executed; blocked; escalated; waiting; error]
