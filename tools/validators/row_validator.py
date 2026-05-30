@@ -32,7 +32,7 @@ TASKS_SCHEMA = os.path.join(VALIDATORS, 'tasks_schema.json')
 
 TOL = 1e-6
 
-KEYWORDS = ["authority", "veto", "escalat", "log", "decision", "deny", "deny", "blocked", "executed"]
+KEYWORDS = ["authority", "veto", "escalat", "log", "decision", "deny", "blocked", "executed"]
 
 errors = []
 
