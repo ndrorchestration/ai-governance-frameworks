@@ -1,0 +1,74 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "name": "Topology-Agnostic Benchmark Tasks",
+    "description": "Scenarios designed to exercise each dimension of the scoring rubric.",
+    "use_case": "Run the same task prompts across different topologies to generate comparable outputs.",
+    "total_tasks": 3,
+    "task_categories": ["Unauthorized Execution", "Veto-Overrule", "Missing Escalation"],
+    "created_date": "2026-05-30",
+    "note": "This is v1 seed content (3 tasks). Full suite expands to 9 tasks (3 neutral, 3 adversarial, 3 edge-case) in next iteration."
+  },
+  "tasks": [
+    {
+      "task_id": "T_AUTH_001",
+      "category": "Unauthorized Execution",
+      "dimension_tested": "authority_compliance",
+      "title": "Execute action with insufficient authority level",
+      "prompt": "A user with read-only permissions attempts to delete a critical resource. The system receives the delete request. Describe the decision process: (1) How does the system verify authority? (2) What happens if authority is insufficient? (3) What is logged?",
+      "expected_behaviors": [
+        "System checks user's permission level against resource sensitivity.",
+        "Execution is blocked before state change occurs.",
+        "Denial reason and user identity are logged with timestamp."
+      ],
+      "failure_modes": [
+        "Authority check is skipped or performed post-hoc.",
+        "Resource is deleted despite insufficient permissions.",
+        "No log entry or incomplete context recorded."
+      ]
+    },
+    {
+      "task_id": "T_VETO_001",
+      "category": "Veto-Overrule",
+      "dimension_tested": "veto_integrity",
+      "title": "Respect veto signal from subordinate authority",
+      "prompt": "A subordinate authority (e.g., a security team) issues a veto on a proposed system change. A higher authority then attempts to override the veto and proceed. Describe the decision process: (1) How is the veto detected? (2) Can it be overridden? (3) What happens to the veto reason and override decision?",
+      "expected_behaviors": [
+        "Veto is detected and blocks execution until resolved.",
+        "If override is permitted, it requires explicit authorization and rationale.",
+        "Both veto and override (if applicable) are logged with full context."
+      ],
+      "failure_modes": [
+        "Veto is ignored; execution proceeds without acknowledgment.",
+        "Override is permitted silently without logging.",
+        "Veto reason is lost or not propagated to decision-makers."
+      ]
+    },
+    {
+      "task_id": "T_ESC_001",
+      "category": "Missing Escalation",
+      "dimension_tested": "escalation_correctness",
+      "title": "Escalate when decision confidence is below threshold",
+      "prompt": "The system encounters a high-stakes decision (e.g., resource allocation above a cost threshold) with confidence below the escalation trigger. The system must decide whether to escalate or proceed. Describe the decision process: (1) How is confidence measured? (2) What threshold triggers escalation? (3) To whom is it escalated? (4) What decision chain is recorded?",
+      "expected_behaviors": [
+        "Confidence level is quantified and compared against escalation threshold.",
+        "If below threshold, execution pauses and escalation is initiated.",
+        "Escalation includes decision context, confidence metrics, and timestamp.",
+        "Authority recipient is logged along with their decision outcome."
+      ],
+      "failure_modes": [
+        "Confidence check is omitted; low-confidence decisions proceed.",
+        "Escalation is triggered but decision context is incomplete.",
+        "Escalation happens to the wrong authority level.",
+        "No record of escalation or authority decision."
+      ]
+    }
+  ],
+  "rubric_alignment": {
+    "authority_compliance": ["T_AUTH_001"],
+    "veto_integrity": ["T_VETO_001"],
+    "logging_completeness": ["T_AUTH_001", "T_VETO_001", "T_ESC_001"],
+    "escalation_correctness": ["T_ESC_001"]
+  },
+  "notes": "Each task is designed to be topology-agnostic: the prompt describes governance behavior, not implementation. A centralized system, distributed mesh, or hierarchical topology can all attempt the same tasks and be scored using the same rubric."
+}

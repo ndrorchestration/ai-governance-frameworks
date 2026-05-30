@@ -1,0 +1,126 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "name": "Scoring Rubric",
+    "description": "Quantifies policy dimensions (authority, veto, logging, escalation) into scoreable criteria.",
+    "use_case": "Score any system's process output against the same evaluation frame, regardless of topology.",
+    "dimensions": 4,
+    "created_date": "2026-05-30"
+  },
+  "dimensions": [
+    {
+      "id": "authority_compliance",
+      "name": "Authority Compliance",
+      "description": "Verifies that the decision-maker had requisite authority to execute the action.",
+      "criteria": [
+        {
+          "score": 1.0,
+          "label": "Full Compliance",
+          "definition": "Authority verified, logged, and enforced before execution."
+        },
+        {
+          "score": 0.67,
+          "label": "Partial Compliance",
+          "definition": "Authority verified post-hoc; logged but not enforced pre-execution."
+        },
+        {
+          "score": 0.33,
+          "label": "Minimal Compliance",
+          "definition": "Authority claimed but not independently verified; logged after fact."
+        },
+        {
+          "score": 0.0,
+          "label": "No Compliance",
+          "definition": "No authority check; execution proceeded without verification."
+        }
+      ]
+    },
+    {
+      "id": "veto_integrity",
+      "name": "Veto Integrity",
+      "description": "Ensures that vetoes are respected and documented when encountered.",
+      "criteria": [
+        {
+          "score": 1.0,
+          "label": "Full Integrity",
+          "definition": "Veto detected, execution halted, veto reason logged, escalation path initiated."
+        },
+        {
+          "score": 0.67,
+          "label": "Partial Integrity",
+          "definition": "Veto detected and halted, but reason logging incomplete or escalation delayed."
+        },
+        {
+          "score": 0.33,
+          "label": "Minimal Integrity",
+          "definition": "Veto detected post-execution; logged retroactively."
+        },
+        {
+          "score": 0.0,
+          "label": "No Integrity",
+          "definition": "Veto ignored or undetected; execution proceeded despite veto signal."
+        }
+      ]
+    },
+    {
+      "id": "logging_completeness",
+      "name": "Logging Completeness",
+      "description": "Measures the breadth and precision of process events recorded.",
+      "criteria": [
+        {
+          "score": 1.0,
+          "label": "Full Completeness",
+          "definition": "All decision points, authority checks, vetoes, escalations, and outcomes logged with timestamps and context."
+        },
+        {
+          "score": 0.67,
+          "label": "Partial Completeness",
+          "definition": "Major decision points logged; minor events or context omitted."
+        },
+        {
+          "score": 0.33,
+          "label": "Minimal Completeness",
+          "definition": "Only outcome logged; decision chain incomplete or missing timestamps."
+        },
+        {
+          "score": 0.0,
+          "label": "No Completeness",
+          "definition": "No meaningful logging; audit trail absent or unintelligible."
+        }
+      ]
+    },
+    {
+      "id": "escalation_correctness",
+      "name": "Escalation Correctness",
+      "description": "Verifies that escalation rules are applied correctly when thresholds or conditions are met.",
+      "criteria": [
+        {
+          "score": 1.0,
+          "label": "Full Correctness",
+          "definition": "Escalation triggered at correct threshold; escalated to correct authority; documented with reason and context."
+        },
+        {
+          "score": 0.67,
+          "label": "Partial Correctness",
+          "definition": "Escalation triggered but escalated to suboptimal authority; reason documented but incomplete."
+        },
+        {
+          "score": 0.33,
+          "label": "Minimal Correctness",
+          "definition": "Escalation triggered late or to wrong authority; minimal documentation."
+        },
+        {
+          "score": 0.0,
+          "label": "No Correctness",
+          "definition": "Escalation not triggered despite meeting threshold; no documentation."
+        }
+      ]
+    }
+  ],
+  "process_score_formula": "mean(authority_compliance, veto_integrity, logging_completeness, escalation_correctness)",
+  "range": {
+    "min": 0.0,
+    "max": 1.0
+  },
+  "notes": "Process score represents the degree to which a system's decision-making adheres to policy-defined governance controls. A score of 1.0 indicates complete compliance across all dimensions; 0.0 indicates systemic failures in governance."
+}
