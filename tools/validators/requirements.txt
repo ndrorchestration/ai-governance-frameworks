@@ -1,2 +1,3 @@
-jsonschema
-dateutil
+jsonschema==4.19.0
+python-dateutil==2.8.2
+pytest==7.4.0
