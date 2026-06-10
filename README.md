@@ -12,12 +12,28 @@ Validated frameworks for AI governance: Paul-Elder Critical Thinking, NIST AI RM
 
 ---
 
-## What’s Inside
+## Needle Templates — Runnable NIST/ISO Implementation
+
+The [`docs/needle-templates/`](docs/needle-templates/) directory contains one file per Needle.app workflow template, each mapping the template to its specific NIST AI RMF controls and ISO 42001 clauses. These are the **runnable implementation artifacts** for this framework.
+
+| Template | NIST AI RMF | ISO 42001 | Run |
+|---|---|---|---|
+| [Evaluate LLM Output Quality](docs/needle-templates/NT-01.md) | GOVERN 1.7, MEASURE 2.5 | §8.4 | [needle.app →](https://needle.app/t/evaluate-llm-output-quality) |
+| [Generate Grounded KB Answers](docs/needle-templates/NT-02.md) | MANAGE 2.2 | §8.4 | [needle.app →](https://needle.app/t/grounded-kb-answers) |
+| [KB Answer With Quality Check](docs/needle-templates/NT-03.md) | MEASURE 2.9 | §9.1 | [needle.app →](https://needle.app/t/kb-answer-quality-check) |
+| [Define AI Governance Specification](docs/needle-templates/NT-04.md) | GOVERN 1.7 | §6.1, §9.1 | [needle.app →](https://needle.app/t/ai-governance-spec) |
+
+**Canonical cross-reference:** [DGAF-Framework/docs/needle/TEMPLATE_REGISTRY.md](https://github.com/ndrorchestration/DGAF-Framework/blob/main/docs/needle/TEMPLATE_REGISTRY.md) — maps each template to its NDR pattern, NIST control, and ISO clause. Ratified via Apogee Attestation Gate (NDR P-30).
+
+---
+
+## What's Inside
 
 | Document | Description |
 |---|---|
 | [Structural Alignment of Agentic Architectures](docs/structural-alignment/structural-alignment-agentic-architectures.md) | Taxonomy mapping: proprietary terms → substrate-agnostic MAS standards (20 mappings) |
 | [Index 11 Governance Gate](docs/structural-alignment/index-11-governance-gate.md) | 5-level metallic mean stability gradient for multi-agent systems |
+| [Needle Templates](docs/needle-templates/) | Runnable NIST/ISO implementation artifacts (NT-01–NT-04) |
 
 ---
 
@@ -58,6 +74,7 @@ Full specification: [docs/structural-alignment/index-11-governance-gate.md](docs
 3. **Integration** — Apply Paul-Elder Critical Thinking for decision validation
 4. **Audit Trail** — Implement IIA AI Auditing standards for continuous monitoring
 5. **MAS Stability** — Apply Index 11 gradient for multi-agent deployment gates
+6. **Runnable Templates** — Use [Needle Templates](docs/needle-templates/) as the operational layer for each phase
 
 ---
 
@@ -80,7 +97,8 @@ Apache 2.0 provides explicit patent protection, clear modification requirements 
 
 ## Related Ecosystem
 
-- [DGAF-Framework](https://github.com/ndrorchestration/DGAF-Framework) — governance spine
+- [DGAF-Framework](https://github.com/ndrorchestration/DGAF-Framework) — governance spine + NDR pattern registry
+- [ai-prompt-systems-portfolio](https://github.com/ndrorchestration/ai-prompt-systems-portfolio) — prompt engineering specs for Needle templates
 - [Amethyst-Governance-Eval-Stack](https://github.com/ndrorchestration/Amethyst-Governance-Eval-Stack) — multi-agent eval
 - [junior-apogee-app](https://github.com/ndrorchestration/junior-apogee-app) — production QA platform
 - [resumeapex-eval](https://github.com/ndrorchestration/resumeapex-eval) — benchmark suite
