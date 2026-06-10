@@ -1,14 +1,13 @@
 # Needle Templates — NIST AI RMF & ISO 42001 Implementation Artifacts
 
-> **Status: ⭐ GOLD STAR CERTIFIED** — All templates verified, P-30 passed, COLLEEN 1-1-1-1 cleared.  
+> **Status: ACTIVE**  
 > **Partner Directory:** [needle.app/partners-directory/ndr-ai-orchestration](https://needle.app/partners-directory/ndr-ai-orchestration)
 
 This directory contains one file per Needle.app workflow template, each mapping
 the template to its specific NIST AI RMF controls and ISO 42001 clauses.
 
 These templates are the **runnable implementation layer** of formal AI governance
-obligations. They are cross-referenced to the DGAF NDR Pattern Registry and
-ratified via the Apogee Attestation Gate (P-30).
+obligations. They are cross-referenced to the DGAF NDR Pattern Registry.
 
 ## Templates
 
@@ -23,5 +22,4 @@ ratified via the Apogee Attestation Gate (P-30).
 
 - **NDR Pattern Registry:** [DGAF-Framework/docs/needle/TEMPLATE_REGISTRY.md](https://github.com/ndrorchestration/DGAF-Framework/blob/main/docs/needle/TEMPLATE_REGISTRY.md)
 - **Machine-readable cross-reference:** [DGAF-Framework/docs/ndr_patterns_unified.json](https://github.com/ndrorchestration/DGAF-Framework/blob/main/docs/ndr_patterns_unified.json)
-- **Apogee attestation records:** [ai-prompt-systems-portfolio/docs/qa/](https://github.com/ndrorchestration/ai-prompt-systems-portfolio/tree/main/docs/qa)
-- **Attestation gate:** NDR P-30 (Apogee Attestation Gate) — PASS, composite avg 0.958
+- **Prompt engineering specs:** [ai-prompt-systems-portfolio/specs/needle/](https://github.com/ndrorchestration/ai-prompt-systems-portfolio/tree/main/specs/needle)
