@@ -1,111 +1,61 @@
 # AI Governance Frameworks
 
-![Gold Star Certified](https://img.shields.io/badge/Status-Gold%20Star%20Certified-gold?style=flat-square)
-![NIST AI RMF](https://img.shields.io/badge/Framework-NIST%20AI%20RMF-blue?style=flat-square)
-![ISO 42001](https://img.shields.io/badge/Standard-ISO%2042001-green?style=flat-square)
+![Status](https://img.shields.io/badge/Status-Experimental-blue?style=flat-square)
 ![License](https://img.shields.io/badge/License-Apache%202.0-blue?style=flat-square)
-![Governed](https://img.shields.io/badge/Governed%20by-Agent%20Amethyst-7a39bb?style=flat-square)
 
-> **Governance:** DGAF / Agent Amethyst — This repository is the NIST/ISO/IIA implementation bridge within the PhiLattice / PDMAL stack. See [DGAF-Framework](https://github.com/ndrorchestration/DGAF-Framework) for spine documentation.
+> **Epistemic status:** Experimental governance/evaluation repository. This project contains mappings, templates, and research artifacts. The presence of a NIST, ISO, IIA, or Paul-Elder reference does not by itself establish certification, compliance, or external endorsement.
 
-Validated frameworks for AI governance: Paul-Elder Critical Thinking, NIST AI RMF, ISO 42001, IIA AI Auditing — with implementation roadmap, Index 11 stability gradient, and MAS taxonomy mapping.
+## Purpose
 
----
+This repository explores practical AI-governance mappings and implementation templates, including relationships to NIST AI RMF, ISO/IEC 42001, IIA AI auditing concepts, and critical-thinking methods.
 
-## Needle Templates — Runnable NIST/ISO Implementation
+The repository's own artifacts are authoritative for what is implemented. A mapping to an external standard is an interpretive cross-reference unless the referenced standard and the implementation evidence establish more.
 
-The [`docs/needle-templates/`](docs/needle-templates/) directory contains one file per Needle.app workflow template, each mapping the template to its specific NIST AI RMF controls and ISO 42001 clauses. These are the **runnable implementation artifacts** for this framework.
+## Needle Templates
 
-| Template | NIST AI RMF | ISO 42001 | Run |
-|---|---|---|---|
-| [Evaluate LLM Output Quality](docs/needle-templates/NT-01.md) | GOVERN 1.7, MEASURE 2.5 | §8.4 | [needle.app →](https://needle.app/t/evaluate-llm-output-quality) |
-| [Generate Grounded KB Answers](docs/needle-templates/NT-02.md) | MANAGE 2.2 | §8.4 | [needle.app →](https://needle.app/t/grounded-kb-answers) |
-| [KB Answer With Quality Check](docs/needle-templates/NT-03.md) | MEASURE 2.9 | §9.1 | [needle.app →](https://needle.app/t/kb-answer-quality-check) |
-| [Define AI Governance Specification](docs/needle-templates/NT-04.md) | GOVERN 1.7 | §6.1, §9.1 | [needle.app →](https://needle.app/t/ai-governance-spec) |
+The `docs/needle-templates/` directory contains workflow-template artifacts intended to map operational tasks to governance controls. Template presence is evidence that the artifact exists; it is not evidence that an external auditor has certified the resulting workflow.
 
-**Canonical cross-reference:** [DGAF-Framework/docs/needle/TEMPLATE_REGISTRY.md](https://github.com/ndrorchestration/DGAF-Framework/blob/main/docs/needle/TEMPLATE_REGISTRY.md) — maps each template to its NDR pattern, NIST control, and ISO clause. Ratified via Apogee Attestation Gate (NDR P-30).
+## External-framework boundary
 
----
+- **NIST AI RMF** — external risk-management framework. This repository may map artifacts to it; such a mapping does not constitute NIST endorsement or compliance certification.
+- **ISO/IEC 42001** — external AI management-system standard. Repository artifacts may reference its clauses; certification is a separate organizational and audit process.
+- **IIA** — external professional standards/guidance. References should not be represented as IIA approval.
+- **Paul-Elder Critical Thinking** — external critical-thinking framework; use of its concepts does not establish formal accreditation.
 
-## What's Inside
+## Project-local terminology
 
-| Document | Description |
-|---|---|
-| [Structural Alignment of Agentic Architectures](docs/structural-alignment/structural-alignment-agentic-architectures.md) | Taxonomy mapping: proprietary terms → substrate-agnostic MAS standards (20 mappings) |
-| [Index 11 Governance Gate](docs/structural-alignment/index-11-governance-gate.md) | 5-level metallic mean stability gradient for multi-agent systems |
-| [Needle Templates](docs/needle-templates/) | Runnable NIST/ISO implementation artifacts (NT-01–NT-04) |
+The repository contains project-local concepts such as the **Index 11 stability gradient** and MAS taxonomy mappings. These should be treated as experimental/project-defined constructs unless a specific mathematical or empirical claim is independently derived and validated.
 
----
+In particular, metallic-mean constants appearing in an artifact do not, by themselves, establish a mathematically optimal governance architecture or a causal relationship to AI-system stability.
 
-## Framework Comparison: NIST AI RMF vs ISO 42001
+## Validation boundary
 
-| Feature | NIST AI RMF | ISO/IEC 42001 |
-|:---|:---|:---|
-| **Structure** | 4 Functions: Govern, Map, Measure, Manage | Plan-Do-Check-Act (PDCA) cycle |
-| **Primary Goal** | Flexible risk-based guidance for AI lifecycle | Certifiable AI management system |
-| **Compliance Type** | Voluntary framework for risk awareness | Requires external audits for certification |
-| **Cost** | Free to download from NIST | Must be purchased for certification |
-| **Best For** | Organizations building internal AI risk programs | Organizations requiring formal ISO certification |
+Historical badges, certifications, attestation language, benchmark values, or claims such as `100%` risk coverage are not treated as current verified results unless the repository contains the underlying reproducible evidence.
 
----
+A successful template execution is evidence about that execution; it does not establish organization-wide governance compliance.
 
-## Index 11 Stability Gradient
+## Related ecosystem
 
-The **Index 11 framework** provides a mathematically-grounded stability hierarchy for multi-agent systems, using metallic mean constants as governance anchors:
+This repository may integrate with:
 
-```
-Level     Constant         Value     AI Challenge
-──────────────────────────────────────────────────
-ULTRA     Near-2 mean      ≈1.999    Context window degradation
-HYPER     Supersilver      1.92756   Latent space navigation
-SUPER     Supergolden (ψ)  1.46557   MAS coordination stability
-STANDARD  Index 11         1.77473   System-wide alignment/audit
-SUB       Golden (φ)       1.61803   Stochastic noise / hallucination
-```
+- `DGAF-Framework` — separate governance/evaluation research track
+- `ai-prompt-systems-portfolio` — prompt-engineering artifacts
+- `Amethyst-Governance-Eval-Stack` — separate evaluation track
+- `junior-apogee-app` — separate application/QA track
+- `resumeapex-eval` — separate benchmark/evaluation track
 
-Full specification: [docs/structural-alignment/index-11-governance-gate.md](docs/structural-alignment/index-11-governance-gate.md)
+Cross-repository references do not establish mutual validation.
 
----
+## Status
 
-## Implementation Roadmap
+**Active / experimental.**
 
-1. **Assessment Phase** — Evaluate current AI governance maturity
-2. **Framework Selection** — NIST (flexible) vs ISO (certifiable) based on organizational needs
-3. **Integration** — Apply Paul-Elder Critical Thinking for decision validation
-4. **Audit Trail** — Implement IIA AI Auditing standards for continuous monitoring
-5. **MAS Stability** — Apply Index 11 gradient for multi-agent deployment gates
-6. **Runnable Templates** — Use [Needle Templates](docs/needle-templates/) as the operational layer for each phase
-
----
-
-## Success Metrics
-
-- **Risk Coverage:** 100% of AI systems mapped to governance controls
-- **Audit Compliance:** Pass rate for internal/external audits
-- **Ethical Alignment:** Zero critical ethical violations across AI lifecycle
-
----
+Before presenting any artifact as certified, compliant, production-ready, or mathematically validated, verify the exact implementation, evidence, external-framework requirements, and current commit.
 
 ## License
 
-**As of January 2026, licensed under [Apache License 2.0](LICENSE).**  
-Previous versions (prior to v1.0.0 / January 2026) were released under MIT License.
-
-Apache 2.0 provides explicit patent protection, clear modification requirements for governance and attribution, and enterprise-ready compliance.
-
----
-
-## Related Ecosystem
-
-- [DGAF-Framework](https://github.com/ndrorchestration/DGAF-Framework) — governance spine + NDR pattern registry
-- [ai-prompt-systems-portfolio](https://github.com/ndrorchestration/ai-prompt-systems-portfolio) — prompt engineering specs for Needle templates
-- [Amethyst-Governance-Eval-Stack](https://github.com/ndrorchestration/Amethyst-Governance-Eval-Stack) — multi-agent eval
-- [junior-apogee-app](https://github.com/ndrorchestration/junior-apogee-app) — production QA platform
-- [resumeapex-eval](https://github.com/ndrorchestration/resumeapex-eval) — benchmark suite
-
----
+Apache License 2.0 — see [LICENSE](LICENSE).
 
 ## Provenance
 
-Developed by [Ndr "Ender" Hensel](https://github.com/ndrorchestration) — AI Orchestration Engineer & Systems Architect, Columbus OH.  
-[LinkedIn](https://www.linkedin.com/in/andrewhensel) · [GitHub](https://github.com/ndrorchestration)
+Developed by Ndr / Ender Hensel (`ndrorchestration`).
