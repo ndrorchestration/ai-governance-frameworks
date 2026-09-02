@@ -15,11 +15,12 @@ limitations under the License.
 
 ---
 
-This project includes validated frameworks for AI governance:
+## Framework references
+
+This project contains reference material, mappings, and implementation guidance related to:
 - Paul-Elder Critical Thinking Framework
 - NIST AI Risk Management Framework (AI RMF)
 - ISO/IEC 42001 AI Management System Standards
 - IIA AI Auditing Standards
 
-These frameworks are provided to support institutional and enterprise
-AI governance, risk management, and compliance efforts.
+These materials support research, governance design, risk-management, and standards-alignment work. Inclusion in this repository does not constitute external validation, certification, accreditation, compliance, or endorsement by the named framework owners or standards bodies. Applicability and compliance must be established independently for the specific organization, system, and use case.
