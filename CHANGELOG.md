@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file.
 
+> **Historical-record boundary:** Changelog entries preserve the wording used at the time of each release. Historical references to validation, certification, tiers, badges, or governance status do not establish current external certification or validation. Current claims must be checked against the present repository documentation and evidence.
+
 ## [1.1.0] - 2026-04-19
 
 ### Changed
@@ -10,7 +12,7 @@ All notable changes to this project will be documented in this file.
 
 ### Governance
 - Verified no internal or proprietary implementation details are present in this repository (documentation, frameworks, and reference standards only).
-- Validated badge set: Gold Star Certified, NIST AI RMF, ISO 42001, Apache 2.0.
+- Historical governance metadata recorded a badge set including Gold Star Certified, NIST AI RMF, ISO 42001, and Apache 2.0. These labels are retained as historical release metadata and are not current external certification claims.
 - Part of Phi-Harmonic Pentagon ecosystem — Lavender → Amethyst drift normalization sweep completed 2026-04-19.
 
 ## [1.0.0] - 2026-01-04
