@@ -1,91 +1,100 @@
 # Structural Alignment of Agentic Architectures
 ## A Taxonomic Mapping of Emergent AI Ecosystems to Standardized Research Frameworks
 
-> **Source:** Drive canonical · May 2026 · PhiLattice Studio / PDMAL
-> **Status:** S-TIER · Peer-reviewed against MAS, π-calculus, and formal verification literature
+> **Source lineage:** Drive research artifact · May 2026 · PhiLattice Studio / PDMAL  
+> **Current evidence status:** EXPERIMENTAL RESEARCH MAPPING · NOT INDEPENDENTLY PEER-REVIEWED · NOT PRODUCTION VALIDATION
+
+This document is a terminology and design-hypothesis crosswalk. It contains mathematical identities, architecture analogies, and experimental hypotheses. A conceptual resemblance to a standard research term does not establish mechanism equivalence, empirical efficacy, safety, or production readiness.
 
 ---
 
 ## 1. Foundational Paradigms: From Monolithic Intelligence to Decentralized Agency
 
-The contemporary shift toward "Agentic AI" is fundamentally a transition from single AI solutions to **Multi-Agent Systems (MAS)**. A multi-agent system comprises autonomous, interacting entities situated in a shared environment collaborating to achieve goals.
+Multi-agent systems (MAS) provide a useful standard vocabulary for systems made of interacting components or agents. The table below is therefore a **proposed terminology crosswalk**, not proof that each custom mechanism is formally equivalent to the standard term beside it.
 
-| Proprietary / Custom Term | Substrate-Agnostic Standard Term | Functional Mechanism |
+| Proprietary / Custom Term | Proposed Substrate-Agnostic Term | Intended Mechanism / Hypothesis |
 |---|---|---|
-| **Agentic AI** | **Multi-Agent Systems (MAS)** | Decentralized networks of autonomous entities |
-| **Multi-Agent Lattice / PDMAL** | **Swarm Topology / MAS Graph** | Structured network for multi-agent state synchronization |
-| **Specialized Agent** | **Functional Domain Agent** | Entity with specific role and context window optimized for a subtask |
-| **Agentic Workflow** | **Dynamic Task Decomposition** | Sequence where next actions are decided at runtime based on context |
-| **State Anchor** | **Distributed Mutex / Concurrency Control** | Atomicity in temporal state transitions, preventing race conditions |
-| **Durable Execution (NDR-Stasis)** | **Event-Driven State Persistence** | Every step persisted as checkpoint; transparent resume after failure |
-| **Savage Reason (>10 Hz)** | **Ungrounded Divergence** | Learned rule fails on novel inputs; statistical logic approximation fails |
-| **Ionian Mode (0 Hz)** | **Invariant Logic / Steady State** | Stable output where iteration ceases; artifact hardened |
-| **Buoy Ping** | **Heartbeat Monitoring (Liveness Check)** | Periodic signal confirming agent synchronization, preventing zombie processes |
-| **Phi-Calculus** | **Metallic Mean Recursive Optimization** | Golden-ratio bounded iteration for hallucination pruning |
+| **Agentic AI** | **Multi-Agent Systems (MAS)** | Decentralized or interacting task actors |
+| **Multi-Agent Lattice / PDMAL** | **MAS Graph / Structured Topology** | Structured network for multi-agent interaction; topology effects require empirical validation |
+| **Specialized Agent** | **Functional Role / Specialized Executor** | Executor constrained to a particular task contract |
+| **Agentic Workflow** | **Dynamic Task Decomposition** | Runtime selection or decomposition of next actions |
+| **State Anchor** | **Concurrency / State-Transition Control Analogy** | Proposed prevention of conflicting state transitions; not asserted to implement a formal distributed mutex unless separately proven |
+| **Durable Execution (NDR-Stasis)** | **Event-Driven State Persistence** | Persist meaningful execution state for recovery/resume |
+| **Savage Reason (>10 Hz)** | **Ungrounded Divergence — experimental threshold** | Historical heuristic label for suspected reasoning divergence; the `>10 Hz` threshold is not validated as a physical or behavioral frequency law |
+| **Ionian Mode (0 Hz)** | **Invariant / Steady-State Analogy** | Historical heuristic for convergence; `0 Hz` is not established as a literal measurable reasoning frequency |
+| **Buoy Ping** | **Heartbeat / Liveness Check Analogy** | Periodic liveness/coordination signal |
+| **Phi-Calculus** | **Metallic-Mean-Guided Experimental Optimization** | Research hypothesis using mathematical ratios as control/design parameters; behavioral benefit is not established by the ratio itself |
 
 ---
 
-## 2. The Index 11 Governance Framework: Formal Architecture
+## 2. Index-11 / Metallic-Mean Governance Hypothesis
 
-The **Index 11 Hierarchy** functions as a production-grade governance model, serving as a **stability gradient** for agentic systems. By treating mathematical anchors as auditable structural anchors, the system transitions from stochastic approximations to high-order temporal memory.
+The **Index-11 hierarchy is an experimental hypothesis**, not a production-grade governance model. It proposes that selected algebraic anchors may be useful as design or scheduling parameters for classes of orchestration problems. No causal relationship between these constants and AI-system stability is established merely by mathematical definition or analogy.
 
-### 2.1 Stability Gradient Taxonomy
+### 2.1 Experimental Stability-Gradient Taxonomy
 
-| Complexity Level | Algebraic Anchor | Real Value | AI Challenge | DGAF Governance Gate |
-|---|---|---|---|---|
-| **ULTRA** | Near 2.0 | ≈ 1.999 | Context Window Degradation | Continuous memory audit; prune "Context Rot" |
-| **HYPER** | Supersilver | 1.92756 | Latent Space Navigation | Dimensional manifold boundary checks |
-| **SUPER** | Supergolden (ψ) | 1.46557 | MAS Coordination Stability | Multi-agent graph dependency validation |
-| **STANDARD** | Index 11 | 1.77473 | System-wide Alignment / Audit | Global alignment heartbeat |
-| **SUB** | Golden (φ) | 1.61803 | Stochastic Noise | Hallucination mitigation; factual-closeness filtering |
+| Complexity Label | Algebraic Anchor | Approx. Value | Proposed AI Challenge | Proposed Review / Gate Action |
+|---|---|---:|---|---|
+| **ULTRA** | Near-2 mean | ≈1.999 | Context-window degradation | Memory audit / pruning |
+| **HYPER** | Supersilver | 1.92756 | Latent-space navigation | Boundary review |
+| **SUPER** | Supergolden (ψ) | 1.46557 | MAS coordination | Graph/dependency validation |
+| **STANDARD** | Platinum Mean / Index-11 research anchor | 1.774732842 | System-wide alignment/audit | Alignment review |
+| **SUB** | Golden ratio (φ) | 1.61803 | Stochastic/noisy behavior | Grounding / factuality review |
 
-### 2.2 High-Tension Governance Gate
+These row-to-challenge associations are experimental mappings. They should be treated as candidate variables or design heuristics to test, not validated laws.
 
-Trigger condition: when maximum coefficient of agent output magnitude > 10.0 → emergency cooling sequence activates (HYPER-level manifold routing check).
+### 2.2 High-Tension Gate Hypothesis
+
+Historical materials used an output-magnitude `>10.0` trigger and frequency-like labels such as "Savage Reason" and "Ionian Mode." Those are **experimental thresholds and metaphors**, not independently validated physical measurements or universal decision boundaries. Any operational use requires a separately defined measurable variable, preregistered threshold rationale, and empirical validation.
 
 ---
 
 ## 3. Infrastructure Primitives: Durable Execution and State Persistence
 
-- **State Anchor (Distributed Mutex):** Concurrency control ensuring atomicity in temporal state transitions, preventing race conditions in a shared environment.
-- **Durable Execution (NDR-Stasis):** Every meaningful step — tool call, decision, state change — persisted as checkpoint. Enables Transparent Resume after infrastructure failure.
-- **Durable Session:** State management pattern multiplexing token streams with structured state into a persistent shared session users and agents can join at any time.
+The following are architecture patterns or analogies and should be evaluated against the actual implementation rather than inferred from naming:
+
+- **State Anchor:** state-transition/concurrency control intended to reduce conflicting mutations; a formal mutex/distributed-lock guarantee requires implementation-specific proof.
+- **Durable Execution (NDR-Stasis):** persistence of meaningful execution state to support recovery or resume after interruption.
+- **Durable Session:** a state-management pattern combining interaction streams with structured persistent state.
 
 ---
 
-## 4. Formal Logic and Process Calculus
+## 4. Formal Logic and Process Calculus Analogies
 
-| π-Calculus Operator | Mathematical Notation | Agentic System Equivalent |
+| π-Calculus Operator | Mathematical Notation | Agentic-System Analogy |
 |---|---|---|
-| Parallel Composition | P ∣ Q | Multiple agents executing subtasks concurrently |
-| Restriction | (ν n)P | Allocation of new, private communication channel or tool |
-| Replication | !P | Agent server or service that can spawn infinite instances |
+| Parallel Composition | P ∣ Q | Multiple executors/subtasks operating concurrently |
+| Restriction | (ν n)P | Private communication/resource scope |
+| Replication | !P | Repeatable/spawnable service or executor |
+
+These are explanatory analogies unless a system is formally specified and proven in the corresponding calculus.
 
 ---
 
-## 5. Taxonomy of Failure Modes: Mechanistic Definitions
+## 5. Failure-Mode Vocabulary
 
-- **Savage Reason (Ungrounded Divergence):** Functional divergence where learned rule fails on novel inputs.
-- **Semantic Drift (Fidelity Decay):** Gradual erosion of meaning, intent, and nuance across recursive multi-turn transformations.
-- **Instruction Attenuation (Context Decay):** Average 39% performance drop in multi-turn conversations as system prompt influence decays.
-- **Ceremonialization (Ritualized Completion):** Model reduces performance to ritual — stating "task complete" without actually performing work.
+- **Savage Reason / Ungrounded Divergence:** historical project term for a reasoning/output divergence hypothesis; no universal numeric threshold is established.
+- **Semantic Drift / Fidelity Decay:** gradual change in meaning or task intent across transformations or interactions.
+- **Instruction Attenuation / Context Decay:** project shorthand for degradation of instruction adherence across context or interaction length. The previously stated fixed `39%` performance-drop figure is not treated here as a general result without a directly bound study, task definition, model population, and measurement protocol.
+- **Ceremonialization / Ritualized Completion:** behavior in which a system reports completion without satisfying the underlying task/evidence contract.
 
 ---
 
 ## 6. Observability and Behavioral Telemetry
 
-- **Heartbeat Monitoring (Buoy Ping):** Agents send periodic signals confirming synchronization; prevents zombie processes (logic-dead, process-alive agents).
-- **OpenTelemetry Standards (OTel v1.41.0+):** Unified tracking for Tasks (objectives), Actions (execution units), and Memory (context continuity).
+- **Heartbeat Monitoring / Buoy Ping:** a liveness/coordination signal analogous to conventional heartbeat monitoring.
+- **OpenTelemetry:** a standard observability substrate that may instrument traces, metrics, logs, and application-specific agent/workflow concepts. Project-specific `Tasks`, `Actions`, or `Memory` models are not asserted to be normative OpenTelemetry object types unless directly mapped to the applicable specification.
 
 ---
 
-## References
+## Evidence Boundary
 
-- Dawiso — Multi-Agent Systems: AI Orchestration Explained
-- Google Cloud — What is a multi-agent system in AI?
-- WorkOS — Maxim Fateev on durable execution and AI agents
-- Electric SQL — Durable Sessions for collaborative AI (2026)
-- Wikipedia — π-calculus, Process calculus
-- arXiv — Stop Calling It Hallucination: The True Failure Mode of AI Is Semantic Drift
-- arXiv — From CRUD to Autonomous Agents: Formal Validation for Semantic Gateways (2604.25555)
-- OneUptime — Heartbeat and Dead Man's Switch Alerts (2026)
+Mathematical identities can be verified independently of behavioral hypotheses. The existence of a metallic mean, polynomial identity, graph property, or geometric constant does **not** establish that using it improves model reasoning, orchestration stability, hallucination rate, safety, governance quality, or any other empirical endpoint. Those effects require separately designed and executed experiments.
+
+This document is therefore suitable as an **experimental hypothesis/taxonomy source**, not as evidence of certification, independent peer review, production readiness, or validated DGAF/PDMAL efficacy.
+
+---
+
+## References and Leads
+
+The historical reference list includes general MAS, durable-execution, process-calculus, observability, and related research sources. Each specific claim must still be bound to a source that actually supports it before external publication or promotion. References by proximity do not validate the custom metallic-mean-to-agentic-behavior mappings.
