@@ -1,17 +1,24 @@
 # AI Governance Frameworks — Docs Index
 
-> **Last updated:** May 6, 2026 · Session 032 (Coherence Sweep)  
-> **Governance:** Agent Amethyst + COLLEEN-L5
+> **Current interpretation updated:** September 12, 2026  
+> **Governance coordination:** `role.governance-orchestrator`  
+> **Continuity / archival coordination:** `role.continuity-archive-coordinator`
+
+Historical Agent Amethyst / COLLEEN labels in dated records are provenance only. Current behavior and authority are interpreted through the accepted DGAF Role & Capability Registry and persona-lineage mapping; persona names do not independently grant authority.
 
 ## Structural Alignment
 
 | File | Description |
 |---|---|
-| [structural-alignment-agentic-architectures.md](structural-alignment/structural-alignment-agentic-architectures.md) | 20-term taxonomy: proprietary → substrate-agnostic MAS standards; Index 11 hierarchy; π-calculus operators; failure mode definitions |
-| [index-11-governance-gate.md](structural-alignment/index-11-governance-gate.md) | 5-level metallic mean stability gradient; supergolden ratio proof; Platinum Constant; emergency cooling protocol; 11Q agent evaluation framework |
+| [structural-alignment-agentic-architectures.md](structural-alignment/structural-alignment-agentic-architectures.md) | Experimental taxonomy mapping custom terminology to substrate-agnostic MAS concepts; evidentiary hardening remains tracked separately |
+| [index-11-governance-gate.md](structural-alignment/index-11-governance-gate.md) | Experimental metallic-mean / Index-11 governance hypothesis set; persona authority is non-canonical and epistemic hardening is tracked separately |
 
-## Cross-References
+## Current Authority References
 
-- [DGAF-Framework NDR Pattern Registry](https://github.com/ndrorchestration/DGAF-Framework/blob/main/docs/governance/ndr-pattern-registry-v3.md)
-- [DGAF-Framework COLLEEN-L5 Protocol](https://github.com/ndrorchestration/DGAF-Framework/blob/main/docs/agents/colleen-l5-governance-protocol.md)
-- [DGAF-Framework Canonical Agent Registry](https://github.com/ndrorchestration/DGAF-Framework/blob/main/docs/agents/canonical-agent-registry.md)
+- [DGAF Role & Capability Registry](https://github.com/ndrorchestration/DGAF-Framework/blob/main/governance/role_capability_registry.v1.json)
+- [DGAF Persona-to-Role Lineage](https://github.com/ndrorchestration/DGAF-Framework/blob/main/governance/persona_role_lineage.v1.json)
+- [DGAF Persona-to-Role Architecture](https://github.com/ndrorchestration/DGAF-Framework/blob/main/docs/superpowers/specs/2026-09-12-persona-to-role-architecture-migration-design.md)
+
+## Historical Cross-References
+
+Older NDR pattern, COLLEEN-L5, and canonical-agent-registry documents remain historical/source context. They do not supersede the current functional role/capability registry or transfer scientific, security, compliance, or authorization status.
