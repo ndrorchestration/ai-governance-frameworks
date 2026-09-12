@@ -7,55 +7,56 @@
 
 ---
 
-## Overview
+## Current Functional Interpretation
 
-The CONDUCTED_TRIAD is the standard multi-model formation for all high-stakes work in the ndrorchestration portfolio. It splits responsibilities across two AI systems based on their strengths:
+CONDUCTED_TRIAD is retained as an orchestration pattern, not a source of persona authority. Current execution is divided by functional lanes; named historical labels in the dated pattern lineage do not determine permissions or governance status.
 
-| System | Strength | Tasks |
+| Lane / executor | Strength | Tasks |
 |---|---|---|
-| **Perplexity / Amethyst** | Real-time retrieval, citation, GitHub API | Priority audits, issue triage, cross-repo search, live data |
-| **GPT-5.4 Thinking** | Deep synthesis, visible reasoning plan, 1M context | Code gen, FLAG resolution, governance doc drafting, eval suites |
+| **Research/retrieval lane — Perplexity or equivalent executor** | Real-time retrieval, citation, GitHub/API access | Priority audits, issue triage, cross-repo search, live data |
+| **Synthesis/execution lane — reasoning model or equivalent executor** | Deep synthesis, planning, code/document generation | Code generation, FLAG resolution, governance drafting, eval suites |
+| **Evidence verification review — `role.evidence-verification-reviewer`** | Evidence/claim boundary review | Check evidence linkage, scope, provenance, and overclaim boundaries before acceptance |
+
+Executor/provider identity is replaceable. A model name or historical persona label does not itself grant governance authority.
 
 ---
 
 ## Standard Session Flow
 
-```
-Step 1 — PERPLEXITY (Amethyst)
+```text
+Step 1 — RESEARCH / RETRIEVAL LANE
   └─ Pull open issues, PR status, repo health, priority audit
-  └─ Output: structured priority list with GitHub links
+  └─ Output: structured priority list with source links
 
 Step 2 — HANDOFF
-  └─ Paste into GPT-5.4 Thinking using T-5 Session Open template
-  └─ Include: GOVERNANCE_CONSTITUTION.md + SESSION_ANCHORS.md +
-             AGENT_INSTANTIATION.md + priority list
+  └─ Supply retrieved evidence/context to the synthesis/execution lane
+  └─ Include only the current governing contracts and the scoped priority list
 
-Step 3 — GPT-5.4 THINKING
-  └─ Surfaces THINKING PLAN — verify gates before execution proceeds
-  └─ Executes: doc drafting (T-1), FLAG resolution (T-2), code (T-3)
-  └─ Output: ready-to-commit markdown files + commit messages
+Step 3 — SYNTHESIS / EXECUTION LANE
+  └─ Produce a reviewable plan before irreversible actions
+  └─ Execute bounded drafting, issue resolution, or code/eval work
+  └─ Output: reviewable artifacts + exact change/evidence references
 
-Step 4 — PERPLEXITY (Amethyst)
-  └─ Receives GPT-5.4 output
-  └─ Commits files to GitHub via MCP tools
-  └─ Verifies commit SHAs, updates issue status, logs session
+Step 4 — REPOSITORY / TOOL EXECUTION
+  └─ Apply only authorized repository/tool actions
+  └─ Verify resulting commit or artifact identities and update issue state
 
-Step 5 — APOGEE LENS REVIEW
-  └─ Verify: every section maps to filed issue or PR
-  └─ Verify: no claims exceed verified evidence
-  └─ Verify: append-only compatible
-  └─ Mark S-Tier / Gold Star only after this gate passes
+Step 5 — EVIDENCE VERIFICATION REVIEW
+  └─ Verify every material claim maps to evidence or is explicitly bounded
+  └─ Verify provenance, scope, and non-transfer of unrelated authority
+  └─ Reject certification/quality labels that exceed evidence
 ```
 
 ---
 
 ## Non-Negotiables
 
-- φ = 1.61818 declared in every GPT-5.4 prompt preamble
-- THINKING PLAN checklist included in every prompt — redirectable before execution
-- DemiJoule gate checked before any irreversible action
-- Append-only default — destructive edits require explicit Njineer approval
-- No S-Tier or Gold Star designation before Apogee Lens approval
+- Functional contracts and evidence boundaries control behavior; persona names do not.
+- Plans remain redirectable before irreversible execution where the workflow supports review.
+- Destructive edits require explicit authorized approval under the repository's current policy.
+- Evidence verification review must reject claims that exceed verified evidence.
+- No S-Tier, Gold Star, compliance, certification, safety, or production-readiness designation follows merely from executing this workflow.
+- Historical DemiJoule/Apogee/Amethyst/COLLEEN gate labels in prior versions are lineage only unless separately mapped through an accepted functional contract.
 
 ---
 
@@ -71,4 +72,4 @@ Step 5 — APOGEE LENS REVIEW
 
 ---
 
-*Part of P-34b. For full templates see the primary pattern file in DGAF-Framework. Last updated: 2026-06-28 · S071 · Amethyst × COLLEEN.*
+*Part of P-34b. Historical authorship/session attribution: 2026-06-28 · S071 · Amethyst × COLLEEN. These names are preserved as event-time provenance, not current authority.*
