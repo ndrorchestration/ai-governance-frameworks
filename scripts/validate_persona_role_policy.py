@@ -35,6 +35,14 @@ def main() -> int:
     require("COLLEEN activates" not in gate, "Index-11 still grants persona gate authority")
     require("COLLEEN sign-off" not in gate, "Index-11 still grants persona sign-off authority")
 
+    xref = read("patterns/P-34b_GPT54_THINKING_PROMPTS_XREF.md")
+    require("Current functional interpretation" in xref, "P-34b cross-list lacks current functional interpretation")
+    require("role.governance-orchestrator" in xref, "P-34b cross-list lacks governance coordination role")
+    require("role.evidence-verification-reviewer" in xref, "P-34b cross-list lacks evidence review role")
+    require("role.constraint-qa-auditor" in xref, "P-34b cross-list lacks constraint review role")
+    require("Historical cross-listing snapshot" in xref, "P-34b cross-list does not preserve dated persona content as historical provenance")
+    require("does not modify the primary DGAF pattern" in xref, "P-34b local projection does not bound DGAF authority")
+
     snapshot = read("ECOSYSTEM_STATE.md")
     require("Snapshot-era role labels" in snapshot, "historical snapshot boundary must remain explicit")
 
