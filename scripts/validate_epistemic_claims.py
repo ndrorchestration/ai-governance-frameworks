@@ -2,6 +2,7 @@
 """Fail closed on known unsupported current-facing Index-11 governance claims."""
 
 from pathlib import Path
+import re
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -19,8 +20,18 @@ def main() -> int:
     structural = read("docs/structural-alignment/structural-alignment-agentic-architectures.md")
     gate = read("docs/structural-alignment/index-11-governance-gate.md")
 
-    for forbidden in ("S-TIER", "Peer-reviewed", "production-grade governance model"):
+    for forbidden in ("S-TIER", "Peer-reviewed"):
         require(forbidden not in structural, f"unsupported current claim remains: {forbidden}")
+
+    affirmative_production_claim = re.search(
+        r"(?<!not a )(?<!not an )\bproduction-grade governance model\b",
+        structural,
+        flags=re.IGNORECASE,
+    )
+    require(
+        affirmative_production_claim is None,
+        "unsupported affirmative production-grade governance claim remains",
+    )
 
     require("experimental hypothesis" in structural.lower(), "structural mapping is not explicitly experimental")
     require("not independently peer-reviewed" in structural.lower(), "peer-review boundary is missing")
