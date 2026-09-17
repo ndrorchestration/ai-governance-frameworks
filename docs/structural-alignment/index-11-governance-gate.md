@@ -1,7 +1,7 @@
 # Index 11 Governance Gate
 ## DGAF High-Tension Stability Specification
 
-> **Framework lineage:** Dynamic Governance Assurance Framework (DGAF)  
+> **Historical framework lineage:** Dynamic Governance Assurance Framework (DGAF) — legacy/inconsistent project terminology retained for provenance; the current canonical DGAF expansion is **Dynamic Governance Agentic Formation**.  
 > **Substrate lineage:** Phi-Calculus / Metallic Mean Recursive Optimization  
 > **Current evidence status:** EXPERIMENTAL · NOT VALIDATED · epistemic hardening tracked in repository issue #5
 
