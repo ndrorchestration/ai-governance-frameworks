@@ -18,7 +18,7 @@ Frameworks in this repository draw on the following established standards:
 
 ## Unique Architectural Contributions
 
-- **DGAF (Dynamic Governance Assurance Framework)** — Frequency-based multi-agent orchestration with 21% constraint compliance improvement
+- **DGAF (Dynamic Governance Agentic Formation)** — Related multi-agent governance/orchestration research; performance or efficacy claims require claim-specific retained evidence and are not established by this repository's architecture descriptions alone
 - **Index 11 Stability Gradient** — Metallic mean hierarchy for MAS governance gating
 - **1-1-1-1 Alignment Gate** — Semantic / Logical / Visual / Ethical quad-alignment protocol
 - **NDR-Stasis Pattern** — Durable execution via event-driven state persistence

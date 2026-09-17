@@ -19,6 +19,7 @@ def require(condition: bool, message: str) -> None:
 def main() -> int:
     structural = read("docs/structural-alignment/structural-alignment-agentic-architectures.md")
     gate = read("docs/structural-alignment/index-11-governance-gate.md")
+    contributing = read("CONTRIBUTING.md")
 
     for forbidden in ("S-TIER", "Peer-reviewed"):
         require(forbidden not in structural, f"unsupported current claim remains: {forbidden}")
@@ -41,6 +42,31 @@ def main() -> int:
     require("2·sin(π/11) ≈ 0.541196" not in gate, "reciprocal quantity is still mislabeled as Platinum Mean")
     require("does not establish" in gate, "mathematical identity is not bounded from behavioral validity")
     require("experimental threshold" in gate.lower(), "heuristic threshold is not explicitly experimental")
+
+    require(
+        "Dynamic Governance Assurance Framework" not in contributing,
+        "CONTRIBUTING still uses obsolete DGAF expansion as current terminology",
+    )
+    require(
+        "21% constraint compliance improvement" not in contributing,
+        "unsupported current-looking 21% performance claim remains in CONTRIBUTING",
+    )
+    require(
+        "Dynamic Governance Agentic Formation" in contributing,
+        "CONTRIBUTING does not use the current canonical DGAF expansion",
+    )
+    require(
+        "> **Framework lineage:** Dynamic Governance Assurance Framework (DGAF)" not in gate,
+        "Index-11 gate still presents obsolete DGAF expansion as current framework lineage",
+    )
+    require(
+        "Historical framework lineage" in gate,
+        "Index-11 gate does not explicitly classify the obsolete expansion as historical provenance",
+    )
+    require(
+        "Dynamic Governance Agentic Formation" in gate,
+        "Index-11 gate does not state the current canonical DGAF expansion",
+    )
 
     print("EPISTEMIC_CLAIM_HYGIENE=PASS")
     return 0
