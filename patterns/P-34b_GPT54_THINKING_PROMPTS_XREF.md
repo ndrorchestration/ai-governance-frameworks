@@ -6,6 +6,26 @@
 
 ---
 
+## Current functional interpretation — 2026-09-12
+
+This repository no longer treats the named personas in the dated cross-listing snapshot below as current authority-bearing architectural units. The local projection is interpreted through functional roles and governing policy:
+
+- Governance/workflow coordination: `role.governance-orchestrator`, within its documented coordination boundary.
+- Evidence/claim review: `role.evidence-verification-reviewer`, for bounded evidence review only.
+- Constraint/QA review: `role.constraint-qa-auditor`, where the configured constraint-review contract applies.
+- Continuity/archive support: `role.continuity-archive-coordinator`, without inherited sign-off or release authority.
+- Human or explicitly governing policy retains any final decision authority that the applicable workflow requires.
+
+Historical labels such as Amethyst, Apogee Lens, DemiJoule, and COLLEEN remain event-time design/authorship provenance. Their names do not independently grant certification, deployment approval, safety authority, or DGAF authorization. Where a historical behavior is not equivalent to an accepted current role contract, no role mapping should be inferred.
+
+This local projection **does not modify the primary DGAF pattern**, does not transfer DGAF authority into this repository, and must not be read as evidence that the primary DGAF source has already completed the same migration. Any primary-source remediation remains controlled by DGAF-Framework and its current governance sequence.
+
+---
+
+## Historical cross-listing snapshot — 2026-06-28
+
+The content below is preserved as event-time provenance for the original S071 cross-listing. It is not the current authority model for this repository.
+
 **Pattern ID:** P-34b  
 **Category:** Multi-Model Orchestration / Prompt Engineering  
 **Session:** S071 · Date: 2026-06-28  
