@@ -38,7 +38,7 @@ A successful template execution is evidence about that execution; it does not es
 
 This repository may integrate with:
 
-- `DGAF-Framework` — separate governance/evaluation research track
+- [Agentic Governance Orchestrator (proposed successor name for DGAF)](https://github.com/ndrorchestration/DGAF-Framework) — separate governance/evaluation research track
 - `ai-prompt-systems-portfolio` — prompt-engineering artifacts
 - `Amethyst-Governance-Eval-Stack` — separate evaluation track
 - `junior-apogee-app` — separate application/QA track
